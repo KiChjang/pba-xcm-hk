@@ -1,0 +1,20 @@
+[package]
+name = "xcm-execution-exercise"
+description = "XCM Message Construction and Sending Exercise"
+version = "1.0.0"
+edition = "2021"
+publish = false
+
+[dependencies]
+codec = { package = "parity-scale-codec", default-features = false, version = "3.0.0" }
+
+frame-system = { default-features = false, version = "27.0.0" }
+frame-support = { default-features = false, version = "27.0.0" }
+
+xcm-simulator-pba = { path = "../xcm-simulator-pba" }
+xcm = { package = "staging-xcm", default-features = false, version = "6.0.0" }
+pallet-xcm = { default-features = false, version = "6.0.0" }
+
+[dev-dependencies]
+env_logger = "0.10.0"
+test-log = "0.2.12"
